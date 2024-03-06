@@ -1,6 +1,11 @@
 use crate::components::counter_btn::Button;
 use leptos::*;
 
+extern crate serde;
+extern crate serde_json;
+
+use serde::Deserialize;
+
 /// Default Home Page
 #[component]
 pub fn Home() -> impl IntoView {
